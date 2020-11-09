@@ -1,0 +1,112 @@
+{
+  "id": "/subscriptions/aacd7284-ec37-475a-935d-bcec484ebabf/resourceGroups/HDIstart/providers/Microsoft.Resources/deployments/HDInsight__2020-07-25T22.53.40.455Z",
+  "name": "HDInsight__2020-07-25T22.53.40.455Z",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/aacd7284-ec37-475a-935d-bcec484ebabf/resourcegroups/HDIstart/providers/Microsoft.HDInsight/clusters/trcluster",
+    "marketplaceItemId": "Microsoft.HDInsightCluster"
+  },
+  "properties": {
+    "templateHash": "10578475821658046506",
+    "parameters": {
+      "clusterName": {
+        "type": "String",
+        "value": "trcluster"
+      },
+      "clusterLoginUserName": {
+        "type": "String",
+        "value": "admin"
+      },
+      "clusterLoginPassword": {
+        "type": "SecureString"
+      },
+      "location": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "clusterVersion": {
+        "type": "String",
+        "value": "3.6"
+      },
+      "clusterWorkerNodeCount": {
+        "type": "Int",
+        "value": 1
+      },
+      "clusterKind": {
+        "type": "String",
+        "value": "SPARK"
+      },
+      "sshUserName": {
+        "type": "String",
+        "value": "sshuser"
+      },
+      "sshPassword": {
+        "type": "SecureString"
+      },
+      "identityCertificate": {
+        "type": "SecureString"
+      },
+      "identityCertificatePassword": {
+        "type": "SecureString"
+      },
+      "minTlsVersionNumber": {
+        "type": "String",
+        "value": "1.2"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Running",
+    "timestamp": "2020-07-25T22:54:56.6498312Z",
+    "duration": "PT1M13.5352339S",
+    "correlationId": "15015705-82e4-4f2a-9831-0a96e0ce73ec",
+    "providers": [
+      {
+        "namespace": "Microsoft.HDInsight",
+        "resourceTypes": [
+          {
+            "resourceType": "clusters",
+            "locations": [
+              "eastus"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Storage",
+        "resourceTypes": [
+          {
+            "resourceType": "storageAccounts",
+            "locations": [
+              "eastus"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/aacd7284-ec37-475a-935d-bcec484ebabf/resourceGroups/HDIstart/providers/Microsoft.Storage/storageAccounts/trclusterhdistorage",
+            "resourceType": "Microsoft.Storage/storageAccounts",
+            "resourceName": "trclusterhdistorage"
+          },
+          {
+            "id": "/subscriptions/aacd7284-ec37-475a-935d-bcec484ebabf/resourceGroups/HDIstart/providers/Microsoft.Storage/storageAccounts/trclusterhdistorage",
+            "resourceType": "Microsoft.Storage/storageAccounts",
+            "resourceName": "trclusterhdistorage",
+            "actionName": "listKeys",
+            "apiVersion": "2015-05-01-preview"
+          }
+        ],
+        "id": "/subscriptions/aacd7284-ec37-475a-935d-bcec484ebabf/resourceGroups/HDIstart/providers/Microsoft.HDInsight/clusters/trcluster",
+        "resourceType": "Microsoft.HDInsight/clusters",
+        "resourceName": "trcluster"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}

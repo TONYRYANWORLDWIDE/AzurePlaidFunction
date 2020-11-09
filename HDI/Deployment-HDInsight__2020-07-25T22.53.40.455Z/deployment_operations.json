@@ -1,0 +1,55 @@
+[
+  {
+    "id": "/subscriptions/aacd7284-ec37-475a-935d-bcec484ebabf/resourceGroups/HDIstart/providers/Microsoft.Resources/deployments/HDInsight__2020-07-25T22.53.40.455Z/operations/338AFB997C58DC7C",
+    "operationId": "338AFB997C58DC7C",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Running",
+      "timestamp": "2020-07-25T22:54:40.9883032Z",
+      "duration": "PT35.49921S",
+      "trackingId": "142a1bfb-52d7-4b94-b3e0-623b7134a984",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/aacd7284-ec37-475a-935d-bcec484ebabf/resourceGroups/HDIstart/providers/Microsoft.HDInsight/clusters/trcluster",
+        "resourceType": "Microsoft.HDInsight/clusters",
+        "resourceName": "trcluster"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/aacd7284-ec37-475a-935d-bcec484ebabf/resourceGroups/HDIstart/providers/Microsoft.Resources/deployments/HDInsight__2020-07-25T22.53.40.455Z/operations/5E2794C9359C1824",
+    "operationId": "5E2794C9359C1824",
+    "properties": {
+      "provisioningOperation": "Action",
+      "provisioningState": "Succeeded",
+      "timestamp": "2020-07-25T22:54:05.4011772Z",
+      "duration": "PT0.1256783S",
+      "trackingId": "ab49d8bf-37eb-4d7b-a75c-ff5b8a8691a5",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/aacd7284-ec37-475a-935d-bcec484ebabf/resourceGroups/HDIstart/providers/Microsoft.Storage/storageAccounts/trclusterhdistorage",
+        "resourceType": "Microsoft.Storage/storageAccounts",
+        "resourceName": "trclusterhdistorage",
+        "actionName": "listKeys",
+        "apiVersion": "2015-05-01-preview"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/aacd7284-ec37-475a-935d-bcec484ebabf/resourceGroups/HDIstart/providers/Microsoft.Resources/deployments/HDInsight__2020-07-25T22.53.40.455Z/operations/0376B2D60C3AB974",
+    "operationId": "0376B2D60C3AB974",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2020-07-25T22:54:05.2253503Z",
+      "duration": "PT20.9721008S",
+      "trackingId": "1fefaa80-69a7-4597-823a-6f9cfcb6d39c",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/aacd7284-ec37-475a-935d-bcec484ebabf/resourceGroups/HDIstart/providers/Microsoft.Storage/storageAccounts/trclusterhdistorage",
+        "resourceType": "Microsoft.Storage/storageAccounts",
+        "resourceName": "trclusterhdistorage"
+      }
+    }
+  }
+]
